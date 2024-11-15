@@ -14,9 +14,9 @@ const About = () => {
                     </div>
                     <div>
                         <p>
-                            I am a Software Engineer with 3 years of experience in the analysis, design, and implementation of integration solutions
-                            using the MuleSoft Anypoint Platform. I am passionate about building excellent software that improves the lives of those
-                            around me. I am currently pursuing my Masters in Computer Science to enhance my skill-set
+                            I am a Software Engineering graduate with 3+ years of experience working as a Full Stack Software Engineer. I have a proven
+                            ability to design and implement robust backend applications, leveraging Python, and NodeJS. Additionally, I am active
+                            open-source contributor, fostering a commitment to continuous learning and collaboration.
                         </p>
                     </div>
                 </div>
