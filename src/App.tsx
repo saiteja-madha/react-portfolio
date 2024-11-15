@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/NavBar";
 import SocialIcons from "./components/SocialIcons";
@@ -13,6 +14,9 @@ export default function App() {
             </section>
             <section id="about" className="snap-center">
                 <About />
+            </section>
+            <section id="experience" className="snap-center">
+                <Experience />
             </section>
         </div>
     );

@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleNavClick = () => setMobileNav(!mobileNav);
 
     return (
-        <div className="sticky top-0 h-[60px] m-w-7xl mx-auto flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+        <div className="sticky top-0 h-[60px] m-w-7xl mx-auto flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
             {/* logo placeholder */}
             <div className="hidden md:flex"></div>
 
@@ -56,6 +56,11 @@ const Navbar = () => {
                         About
                     </Link>
                 </li>
+                <li>
+                    <Link to="experience" containerId="app" smooth={true} duration={100}>
+                        Experience
+                    </Link>
+                </li>
             </ul>
 
             {/* hamburger*/}
@@ -85,15 +90,20 @@ const Navbar = () => {
 
             {/* mobile menu*/}
             <ul className={!mobileNav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
-                <li className="py-6 text-4xl">
+                <li className="py-6 text-4xl hover:text-white">
                     <Link onClick={handleNavClick} containerId="app" to="hero" smooth={true} duration={100}>
                         Home
                     </Link>
                 </li>
-                <li className="py-6 text-4xl">
+                <li className="py-6 text-4xl hover:text-white">
                     {" "}
                     <Link onClick={handleNavClick} containerId="app" to="about" smooth={true} duration={100}>
                         About
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl hover:text-white">
+                    <Link onClick={handleNavClick} containerId="app" to="experience" smooth={true} duration={100}>
+                        Experience
                     </Link>
                 </li>
             </ul>
