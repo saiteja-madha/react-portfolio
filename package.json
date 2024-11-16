@@ -2,7 +2,7 @@
     "name": "react-portfolio",
     "private": true,
     "homepage": "https://saitejamadha.dev",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "type": "module",
     "scripts": {
         "predeploy": "npm run build",
