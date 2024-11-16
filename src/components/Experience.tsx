@@ -1,8 +1,8 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import logo_cbc from "../assets/logo_cbc.png";
-import logo_w4m from "../assets/w4m.png";
-import logo_coforge from "../assets/coforge.png";
+import logo_w4m from "../assets/logo_w4m.png";
+import logo_coforge from "../assets/logo_coforge.png";
 
 interface Experience {
     title: string;
@@ -22,7 +22,11 @@ const experiences: Experience[] = [
         icon: logo_cbc,
         icon_bg: "#000000",
         date: "Oct 2024 - Current",
-        points: [],
+        points: [
+            "Led client interactions to gather requirements, ensuring alignment with business goals and timely delivery of solutions.",
+            "Designed and implemented a microservices architecture, reducing code complexity and enabling independent deployment of services.",
+            "Integrated Box API to enable file uploads and downloads, reducing manual intervention by 60% and improving data security.",
+        ],
     },
     {
         title: "Full Stack Developer",
@@ -71,7 +75,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
         >
             <div>
                 <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-                <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
+                <p className="text-[#8892b0] text-[16px] font-semibold" style={{ margin: 0 }}>
                     {experience.company_name} - {experience.employment_type}
                 </p>
             </div>
@@ -91,7 +95,9 @@ const Experience = () => {
     return (
         <div className="w-full bg-[#0a192f] text-gray-300 py-20">
             <div>
-                <p className={`sm:text-[18px] text-base text-secondary uppercase tracking-wider text-center`}>What I have done so far</p>
+                <p className={`sm:text-[18px] text-theme-light text-base text-primary uppercase tracking-wider text-center`}>
+                    What I have done so far
+                </p>
                 <h2 className={`text-white font-black text-5xl text-center`}>Work Experience.</h2>
             </div>
 
