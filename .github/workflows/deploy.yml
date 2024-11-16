@@ -1,31 +1,27 @@
-name: Deploy React Portfolio to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Deploy to GitHub Pages
-        env:
-          MY_EMAIL: git@saitejamadha.dev
-          MY_NAME: saiteja-madha
+      - name: Install and Build 🔧
         run: |
-          git config --global user.email $MY_EMAIL
-          git config --global user.name $MY_NAME
-          git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/$MY_NAME/react-portfolio.git
-          npm run deploy
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
