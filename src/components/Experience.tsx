@@ -1,6 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import logo_cbc from "../assets/logo_cbc.png";
+import logo_fnma from "../assets/logo_fnma.png";
 import logo_w4m from "../assets/logo_w4m.png";
 import logo_coforge from "../assets/logo_coforge.png";
 
@@ -18,9 +18,9 @@ const experiences: Experience[] = [
     {
         title: "Full Stack Developer",
         company_name: "FannieMae",
-        employment_type: "Full-time",
-        icon: logo_cbc,
-        icon_bg: "#000000",
+        employment_type: "Contract",
+        icon: logo_fnma,
+        icon_bg: "#FFFFFF",
         date: "Oct 2024 - Current",
         points: [
             "Led client interactions to gather requirements, ensuring alignment with business goals and timely delivery of solutions.",

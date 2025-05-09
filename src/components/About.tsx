@@ -14,8 +14,8 @@ const About = () => {
                     </div>
                     <div>
                         <p>
-                            I am a Software Engineering graduate with 3+ years of experience working as a Full Stack Software Engineer. I have a
-                            proven ability to design and implement robust backend applications, leveraging Python, and NodeJS. Additionally, I am
+                            I am a Software Engineering graduate with 4 years of experience working as a Full Stack Software Engineer. I have a
+                            proven ability to design and implement robust backend applications, leveraging Python, Java and NodeJS. Additionally, I am
                             active open-source contributor, fostering a commitment to continuous learning and collaboration.
                         </p>
                     </div>
