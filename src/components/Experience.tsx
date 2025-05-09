@@ -17,7 +17,7 @@ interface Experience {
 const experiences: Experience[] = [
     {
         title: "Full Stack Developer",
-        company_name: "CBC",
+        company_name: "FannieMae",
         employment_type: "Full-time",
         icon: logo_cbc,
         icon_bg: "#000000",
